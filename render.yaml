@@ -1,0 +1,8 @@
+services:
+  - type: web_service
+    name: kira-deno-proxy
+    env: deno
+    plan: free
+    branch: main
+    buildCommand: ""
+    startCommand: "deno run --allow-net --allow-env=PORT deno.ts"
